@@ -60,12 +60,14 @@ void Delete_at_beginning(int arr[], int size) {
         arr[i] = arr[i + 1];
     }
     
-    printf("Modified array after Deleting last element is:\n");
+    /* printf("Modified array after Deleting last element is:\n");
     for(int i = 0; i < size; i++) {
         printf("%d ", arr[i]);
     }
     printf("\n");
-    //display(arr, size);
+    */
+    display(arr, size);
+    exit(0);
 }
 
 void Delete_at_position(int arr[], int size) {
@@ -92,6 +94,7 @@ void Delete_at_position(int arr[], int size) {
     }
     printf("\n"); */
     display(arr, size);
+    exit(0);
 }
 
 void Delete_at_end(int arr[], int size) {
@@ -101,6 +104,8 @@ void Delete_at_end(int arr[], int size) {
     for(int i = 0; i < size-1; i++) {
         printf("%d ", arr[i]);
     }
+    printf("\n");
+    exit(0);
 }
 
 void display(int arr[], int size) {
