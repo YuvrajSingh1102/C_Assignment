@@ -59,7 +59,7 @@ void Insert_at_beginning(int arr[], int size) {
     scanf("%d", &element);
 
     size++;
-    printf("%ld",sizeof(size));
+    //printf("%ld",sizeof(size));
     for(int i = size; i > 0; i--) {
         arr[i - 1] = arr[i - 2];
     }
@@ -71,6 +71,7 @@ void Insert_at_beginning(int arr[], int size) {
     }
     printf("\n");*/
     display(arr, size);
+    exit(0);
 }
 
 void Insert_at_position(int arr[], int size) {
@@ -96,6 +97,7 @@ void Insert_at_position(int arr[], int size) {
     }
     printf("\n");*/
     display(arr, size);
+    exit(0);
 }
 
 void Insert_at_end(int arr[], int size) {
@@ -108,6 +110,7 @@ void Insert_at_end(int arr[], int size) {
     arr[size - 1] = element;
     printf("Modified array after insertion is:\n");
     display(arr, size);
+    exit(0);
 }
 
 void display(int arr[], int size) {
@@ -115,4 +118,5 @@ void display(int arr[], int size) {
         printf("%d ", arr[i]);
     }
     printf("\n");
+    exit(0);
 }
