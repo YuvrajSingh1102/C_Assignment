@@ -1,0 +1,10 @@
+Hello world.
+I love programming.
+My name is yuvraj singh solanki.
+how's you all.
+that great.
+fgets can read strings from a file.
+fgets read one line at a time.
+or until end of the file it is reached.
+That's it.
+thankyou.
