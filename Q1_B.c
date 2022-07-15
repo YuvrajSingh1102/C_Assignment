@@ -15,6 +15,7 @@ int main() {
     char string1[256];
     char longest[256];
     int length = 0;
+    int counter = 0;
     //char string2[256];
 
     fp = fopen("Strings.txt", "r");
@@ -29,10 +30,16 @@ int main() {
             if(length < strlen(string1)){
                 strcpy(longest, string1);
                 length = strlen(string1);
+                counter++;
             }
         }
+        if(counter == 1) {
+            printf("All the lines are same. Please enter again\n");
+        }
+        else{
         printf("Longest string among all strings is: %s", longest);
         fclose(fp);
+        }
     }
     else
     {
